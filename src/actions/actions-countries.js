@@ -2,7 +2,7 @@ export const GET_COUNTRIES = 'GET_COUNTRIES';
 export const GET_COUNTRY = 'GET_COUNTRY';
 export const DELETE_COUNTRIES = 'DELETE_COUNTRIES';
 export const SEARCH_COUNTRIES = 'SEARCH_COUNTRIES';
-export const SET_COUNTRIES = 'SET_COUNTRIE';
+export const SET_CONTINENT = 'SET_CONTINENT';
 
 export function getCountries()  {
 	return {
@@ -12,28 +12,28 @@ export function getCountries()  {
 
 export function deleteCountry(id)  {
 	return {
-		type: GET_COUNTRIES,
+		type: DELETE_COUNTRIES,
 		id
 	}
 }
 
 export function getCountry(id)  {
 	return {
-		type: GET_COUNTRIES,
+		type: GET_COUNTRY,
 		id
 	}
 }
 
 export function searchCountries(searchText)  {
 	return {
-		type: GET_COUNTRIES,
+		type: SEARCH_COUNTRIES,
 		searchText
 	}
 }
 
 export function setContinent(name)  {
 	return {
-		type: GET_COUNTRIES,
+		type: SET_CONTINENT,
 		name
 	}
 }
